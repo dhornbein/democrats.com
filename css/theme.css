@@ -263,7 +263,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #373a3c;
@@ -4980,7 +4980,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5062,7 +5062,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8570,6 +8570,19 @@ aside.widget {
 
 .gallery-caption {
   display: block; }
+
+.home .post-hero {
+  background-color: #895cd1;
+  background-size: cover;
+  color: white;
+  margin-bottom: 15px; }
+  .home .post-hero > div {
+    background-color: rgba(33, 94, 189, 0.65);
+    padding-top: 15px; }
+  .home .post-hero a {
+    color: inherit; }
+  .home .post-hero .entry-title {
+    text-transform: uppercase; }
 
 /*
 * Use existing Bootstrap 4 classes and

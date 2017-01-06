@@ -1,1 +1,19 @@
-// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+.home {
+  .post-hero {
+    background-color: $brand-primary;
+    background-size: cover;
+    color: $hero-text-color;
+    margin-bottom: 15px;
+    > div {
+      background-color: $hero-bk-overlay;
+      padding-top: 15px;
+    }
+    a {
+      color: inherit;
+    }
+
+    .entry-title {
+      text-transform: uppercase;
+    }
+  }
+}
