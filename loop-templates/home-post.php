@@ -14,8 +14,6 @@
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-
 	<div class="entry-content">
 
 		<?php the_content(); ?>
