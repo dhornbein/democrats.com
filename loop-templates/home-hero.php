@@ -11,7 +11,7 @@ $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' )
 ?>
 <article <?php post_class('post-hero row'); ?> id="post-<?php the_ID(); ?>" style="background-image: url('<?php echo $thumb['0'];?>')">
 
-	<div class="col-md-12">
+	<div class="col-md-12 clearfix">
 		<header class="entry-header">
 		
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
