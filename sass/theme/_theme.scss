@@ -1,3 +1,21 @@
+.top-bar {
+  background-color: $top-bar-bg;
+  color: $top-bar-color;
+  padding: 5px 0;
+}
+
+.navbar {
+  background-color: $navbar-bg;
+  text-align: center;
+  .navbar-brand {
+    float: none;
+    img {
+      max-height: 60px;
+      width: auto;
+    }
+  }
+}
+
 .home {
   .post-hero {
     background-color: $brand-primary;
