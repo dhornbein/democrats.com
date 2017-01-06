@@ -17,11 +17,12 @@
 }
 
 .home {
+  background-color: $home-bg;
   .post-hero {
     background-color: $brand-primary;
     background-size: cover;
     color: $hero-text-color;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     > div {
       background-color: $hero-bk-overlay;
       padding-top: 15px;
@@ -32,6 +33,20 @@
 
     .entry-title {
       text-transform: uppercase;
+    }
+  }
+  .posts-featured {
+    margin-left:inherit;
+    margin-right:inherit;
+    margin-bottom: 30px;
+    .post {
+      background-color: $home-post-bg;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      .entry-header {
+        text-transform: uppercase;
+      }
     }
   }
 }

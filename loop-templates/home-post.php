@@ -6,7 +6,7 @@
  */
 
 ?>
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class('col-md-4'); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
 

@@ -31,20 +31,17 @@ $about_slug = 'about';
 							get_template_part( 'loop-templates/home', 'hero' ); 
 							$first = false; 
 						?>
+
+						<div class="posts-featured row">
+
 						<?php else: 
 							get_template_part( 'loop-templates/home', 'post' ); 
 									endif; ?>
 
-						<?php
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-
-							comments_template();
-
-						endif;
-						?>
 
 					<?php endwhile; // end of the loop. ?>
+
+						</div><!-- post .row end -->
 
 				</main><!-- #main -->
 
@@ -58,9 +55,9 @@ $about_slug = 'about';
 				    // query for the about page
 				    $page_query = new WP_Query( 'pagename=about' );
 				    while ( $page_query->have_posts() ) : $page_query->the_post();
-				    
+
 				        get_template_part( 'loop-templates/home', 'page' ); 
-				        
+
 				    endwhile;
 				    wp_reset_postdata();
 				?>
