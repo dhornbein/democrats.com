@@ -1,3 +1,60 @@
+# Democrats.com Theme
+
+## Files you'll care about
+
+- `sass/_theme.scss` main style sheet, all custom scss is here it uses [sass](http://sass-lang.com)
+- `sass/_theme_variables.scss` this contains all custom sass variables (see below for more info)
+- `front-page.php` main wp template where all the magic happens
+- `loop-templates/home-*.php` these template parts manage all the content that shows up on the `front-page.php` via `get_template_part()` function
+- `header.php` this is the top bit
+- `footer.php` this is the bottom bit
+- `sidebar-footerfull.php` this manages the wrapper for the footer
+
+## Outline
+
+This is currently a single page theme.
+
+The home page consists of three main sections:
+
+- hero post
+- featured posts
+- about section
+
+The home page is constructed using `front-page.php` and is basically just a blog roll. It displays the most recent posts.
+
+### Hero Post
+
+The "top" post will be displayed prominently at the top of the site. It will either be the most recent or the most recent *stick post*. e.g. if you want an older post to show up at the top, make it sticky. If the post has a featured image it will show up in the background with a blue overlay.
+
+The first post in the loop gets treated to the `loop-template/home-hero.php` template. The overlay color is set using `$hero-bk-overlay` in the variables file.
+
+### Featured Posts
+
+These are just the rest of the posts. There is currently no limit to how many will show up. You can make posts private or draft if you no longer want them to show up.
+
+The code for these is in `loop-template/home-post.php`.
+
+### About section
+
+If there is a page with a *slug* of "about" it will show up here. You can set the title of the page to what ever you want as long as the slug (or permalink) is set to "about".
+
+The code for this is in `loop-template/home-page.php`
+
+## Footer
+
+The footer is a widget area. Each widget is 1/3 wide, meaning that if you add three widgets they will flow out into three rows (assuming the screen is wide enough). The first will be the left most, 2nd middle, and third right. If you add more than three they will wrap and start all over again, probably wont look good. If you want to have just one widget on the right you'll need to make 2 blank "text" widgets to push it over.
+
+The footer is starts with `footer.php` and the wrapper for the widget area can be found in `sidebar-footerfull.php` the code that wraps each widget can be found in `inc/widgets.php` under the `footerfull` `register_sidebar()` element (near the bottom).
+
+## Notes
+
+Read the below stuff to understand how the system works.
+
+I'm using mobile first design so the site currently looks decent on mobile and not so great on larger screens.
+
+
+# About Understrap
+
 Start talking: [![Gitter](https://img.shields.io/gitter/room/holger1411/understrap.svg?maxAge=2592000?style=flat-square)](https://gitter.im/holger1411/understrap)
 
 ## Official Docs Page: [Open Docs](https://understrap.github.io/)
