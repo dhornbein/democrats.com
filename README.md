@@ -22,6 +22,10 @@ The home page consists of three main sections:
 
 The home page is constructed using `front-page.php` and is basically just a blog roll. It displays the most recent posts.
 
+### Logo and Tagline
+
+You'll need to set the logo and tagline for the site. Tagline shows up at the top, logo will display in the header.
+
 ### Hero Post
 
 The "top" post will be displayed prominently at the top of the site. It will either be the most recent or the most recent *stick post*. e.g. if you want an older post to show up at the top, make it sticky. If the post has a featured image it will show up in the background with a blue overlay.
