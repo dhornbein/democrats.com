@@ -42,11 +42,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<div class="navbar-header">
 
-					<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-					<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse"
-					        data-target=".exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false"
-					        aria-label="Toggle navigation"></button>
-
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
 					<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"
@@ -58,19 +53,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 } ?><!-- end custom logo -->
 
 				</div>
-
-				<!-- The WordPress Menu goes here -->
-				<?php wp_nav_menu(
-					array(
-						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-toggleable-xs exCollapsingNavbar',
-						'container_id'    => 'exCollapsingNavbar',
-						'menu_class'      => 'nav navbar-nav',
-						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
-						'walker'          => new WP_Bootstrap_Navwalker(),
-					)
-				); ?>
 
 			</div> <!-- .container -->
 
