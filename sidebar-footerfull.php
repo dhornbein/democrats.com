@@ -11,7 +11,7 @@
 
 	<!-- ******************* The Footer Full-width Widget Area ******************* -->
 
-	<div class="wrapper" id="wrapper-footer-full">
+	<div class="wrapper clearfix" id="wrapper-footer-full">
 
 		<?php dynamic_sidebar( 'footerfull' ); ?>
 

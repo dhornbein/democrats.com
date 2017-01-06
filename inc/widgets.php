@@ -54,10 +54,10 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			'name'          => __( 'Footer Full', 'understrap' ),
 			'id'            => 'footerfull',
 			'description'   => 'Widget area below main content and above footer',
-			'before_widget' => '',
-			'after_widget'  => '',
-			'before_title'  => '',
-			'after_title'   => '',
+			'before_widget' => '<div class="footer-widget %2$s col-md-4">',
+	    'after_widget' => '</div>',
+	    'before_title' => '<h3>',
+	    'after_title' => '</h3>',
 		) );
 
 	}

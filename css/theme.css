@@ -8611,6 +8611,12 @@ aside.widget {
       .home .posts-featured .post .entry-header {
         text-transform: uppercase; }
 
+#wrapper-footer-full {
+  background-color: white; }
+
+.footer-widget {
+  margin-bottom: 15px; }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
