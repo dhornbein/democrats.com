@@ -66,3 +66,18 @@
     }
   }
 }
+
+@include media-breakpoint-up(md) {
+  .posts-featured.row {
+    display: table;
+    & > [class*="col-"] {
+        float: none;
+        display: table-cell;
+        vertical-align: top;
+        background-color: $home-post-bg;
+        padding: 0;
+        border-left: 15px solid $home-bg;
+        border-right: 15px solid $home-bg;
+    }
+  }
+}
