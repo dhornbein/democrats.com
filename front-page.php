@@ -26,7 +26,6 @@ $about_slug = 'about';
 
 					<?php $first = true ?>
 					<?php while ( have_posts() ) : the_post(); ?>
-
 						<?php if ($first): 
 							get_template_part( 'loop-templates/home', 'hero' ); 
 							$first = false; 
@@ -34,10 +33,13 @@ $about_slug = 'about';
 
 						<div class="posts-featured row">
 
-						<?php else: 
-							get_template_part( 'loop-templates/home', 'post' ); 
-									endif; ?>
+						<?php else: ?>
 
+							<div class="col-md-4">
+						<?php get_template_part( 'loop-templates/home', 'post' ); ?>
+							</div>
+
+						<?php endif; ?>
 
 					<?php endwhile; // end of the loop. ?>
 
@@ -50,7 +52,7 @@ $about_slug = 'about';
 		</div><!-- .row end -->
 
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-8 offset-md-2">
 				<?php
 				    // query for the about page
 				    $page_query = new WP_Query( 'pagename=about' );

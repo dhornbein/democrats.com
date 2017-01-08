@@ -6,7 +6,7 @@
  */
 
 ?>
-<div class="col-md-4">
+
 	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 	
 		<header class="entry-header">
@@ -35,4 +35,3 @@
 		</footer><!-- .entry-footer -->
 	
 	</article><!-- #post-## -->
-</div>
