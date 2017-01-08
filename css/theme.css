@@ -8594,28 +8594,33 @@ aside.widget {
     margin-bottom: 30px; }
     .home .post-hero > div {
       background-color: rgba(33, 94, 189, 0.65);
-      padding-top: 15px; }
+      padding-top: 15px;
+      padding-bottom: 15px; }
     .home .post-hero a {
       color: inherit; }
     .home .post-hero .entry-title {
       text-transform: uppercase; }
   .home .posts-featured {
-    margin-left: inherit;
-    margin-right: inherit;
     margin-bottom: 30px; }
     .home .posts-featured .post {
       background-color: white;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding: 15px;
       margin-bottom: 15px; }
-      .home .posts-featured .post .entry-header {
-        text-transform: uppercase; }
+      .home .posts-featured .post img.aligncenter {
+        width: 100%; }
 
 #wrapper-footer-full {
   background-color: white; }
 
 .footer-widget {
   margin-bottom: 15px; }
+
+@media (max-width: 575px) {
+  .hentry img.alignleft {
+    display: block;
+    float: none;
+    padding: 0;
+    margin: 0 auto; } }
 
 /*
 * Use existing Bootstrap 4 classes and

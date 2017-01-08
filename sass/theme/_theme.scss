@@ -26,6 +26,7 @@
     > div {
       background-color: $hero-bk-overlay;
       padding-top: 15px;
+      padding-bottom: 15px;
     }
     a {
       color: inherit;
@@ -36,16 +37,13 @@
     }
   }
   .posts-featured {
-    margin-left:inherit;
-    margin-right:inherit;
     margin-bottom: 30px;
     .post {
       background-color: $home-post-bg;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding: 15px;
       margin-bottom: 15px;
-      .entry-header {
-        text-transform: uppercase;
+      img.aligncenter {
+        width: 100%;
       }
     }
   }
@@ -56,4 +54,15 @@
 }
 .footer-widget {
   margin-bottom: 15px;
+}
+
+@include media-breakpoint-down(xs) {
+  .hentry {
+    img.alignleft {
+      display: block;
+      float: none;
+      padding: 0;
+      margin: 0 auto;
+    }
+  }
 }
