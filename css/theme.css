@@ -8606,6 +8606,8 @@ aside.widget {
       background-color: white;
       padding: 15px;
       margin-bottom: 15px; }
+      .home .posts-featured .post .entry-title {
+        font-weight: bold; }
       .home .posts-featured .post img.aligncenter {
         width: 100%; }
 
@@ -8614,6 +8616,23 @@ aside.widget {
 
 .footer-widget {
   margin-bottom: 15px; }
+
+ul.share-buttons {
+  list-style: none;
+  padding: 0; }
+
+ul.share-buttons li {
+  display: inline; }
+
+ul.share-buttons .sr-only {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
 
 @media (max-width: 575px) {
   .hentry img.alignleft {

@@ -29,6 +29,8 @@
 		</div><!-- .entry-content -->
 	
 		<footer class="entry-footer">
+
+			<?php echo understrap_social(); ?>
 	
 			<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
 	
