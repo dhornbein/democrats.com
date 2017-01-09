@@ -8601,6 +8601,16 @@ aside.widget {
     .home .post-hero .entry-title {
       text-transform: uppercase; }
 
+.single .site-main .entry-header {
+  background-color: rgba(33, 94, 189, 0.65);
+  color: white;
+  padding: 30px 0;
+  margin-bottom: 30px; }
+  .single .site-main .entry-header .share-buttons {
+    margin-bottom: 0; }
+    .single .site-main .entry-header .share-buttons .fa-circle {
+      color: #2B479C; }
+
 .posts-featured {
   margin-bottom: 30px; }
   .posts-featured .post {
@@ -8632,6 +8642,8 @@ ul.share-buttons {
   padding: 0; }
   ul.share-buttons li {
     display: inline; }
+  ul.share-buttons a:hover {
+    text-decoration: none; }
   ul.share-buttons .icon-facebook {
     color: #3b5998; }
   ul.share-buttons .icon-twitter {
