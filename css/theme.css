@@ -8600,16 +8600,26 @@ aside.widget {
       color: inherit; }
     .home .post-hero .entry-title {
       text-transform: uppercase; }
-  .home .posts-featured {
-    margin-bottom: 30px; }
-    .home .posts-featured .post {
-      background-color: white;
-      padding: 15px;
-      margin-bottom: 15px; }
-      .home .posts-featured .post .entry-title {
-        font-weight: bold; }
-      .home .posts-featured .post img.aligncenter {
-        width: 100%; }
+
+.posts-featured {
+  margin-bottom: 30px; }
+  .posts-featured .post {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px; }
+    .posts-featured .post .entry-title {
+      font-weight: bold; }
+    .posts-featured .post img.aligncenter {
+      width: 100%; }
+
+.related-posts {
+  background-color: #EBEBEB;
+  margin-top: 30px;
+  padding-top: 30px; }
+  .related-posts .section-title {
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase; }
 
 #wrapper-footer-full {
   background-color: white; }

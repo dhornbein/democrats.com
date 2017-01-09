@@ -43,12 +43,15 @@
 
 	</div><!-- .entry-content -->
 
+	<hr>
+
 	<footer class="entry-footer row">
 
 		<div class="col-md-8 offset-md-2 text-xs-center">
+			<h3>Share</h3>
 			<?php echo understrap_social('3x'); ?>
 
-			<?php understrap_entry_footer(); ?>
+			<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
 		</div>
 
 	</footer><!-- .entry-footer -->

@@ -36,17 +36,29 @@
       text-transform: uppercase;
     }
   }
-  .posts-featured {
-    margin-bottom: 30px;
-    .post {
-      background-color: $home-post-bg;
-      padding: 15px;
-      margin-bottom: 15px;
-      .entry-title { font-weight: bold; }
-      img.aligncenter {
-        width: 100%;
-      }
+}
+
+.posts-featured {
+  margin-bottom: 30px;
+  .post {
+    background-color: $home-post-bg;
+    padding: 15px;
+    margin-bottom: 15px;
+    .entry-title { font-weight: bold; }
+    img.aligncenter {
+      width: 100%;
     }
+  }
+}
+
+.related-posts {
+  background-color: $home-bg;
+  margin-top: 30px;
+  padding-top: 30px;
+  .section-title {
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 
