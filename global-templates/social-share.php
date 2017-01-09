@@ -11,7 +11,7 @@
 
 function understrap_social_icon($name, $size = 'lg'){
 return <<<ICO
-<span class="fa-stack fa-$size">
+<span class="icon-$name fa-stack fa-$size">
   <i class="fa fa-circle fa-stack-2x"></i>
   <i class="fa fa-$name fa-stack-1x fa-inverse"></i>
 </span>

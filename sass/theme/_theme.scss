@@ -58,26 +58,36 @@
 }
 
 // Share buttons
-
 ul.share-buttons{
   list-style: none;
   padding: 0;
+  li {
+    display: inline;
+  }
+  .icon-facebook {
+    color:$brand-facebook-color;
+  }
+  .icon-twitter {
+    color:$brand-twitter-color;
+  }
+  .icon-google {
+    color:$brand-google-color;
+  }
+  .icon-envelope {
+    color:$brand-email-color;
+  }
+  .sr-only {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
 }
 
-ul.share-buttons li{
-  display: inline;
-}
-
-ul.share-buttons .sr-only {
-  position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
 
 @include media-breakpoint-down(xs) {
   .hentry {
@@ -90,16 +100,37 @@ ul.share-buttons .sr-only {
   }
 }
 
+@include media-breakpoint-up(sm) {
+  .posts-featured {
+    .post {
+      margin-left: 50px;
+      position: relative;
+    }
+    ul.share-buttons {
+      position: absolute;
+      top: 5px;
+      left: -45px;
+      li {
+        display: block;
+      }
+    }
+  }
+}
+
 @include media-breakpoint-up(md) {
-  .posts-featured.row {
+  .posts-featured {
     display: table;
+    .post {
+      // remove small screen share btn margin
+      margin-left: 0;
+    }
     & > [class*="col-"] {
         float: none;
         display: table-cell;
         vertical-align: top;
         background-color: $home-post-bg;
         padding: 0;
-        border-left: 15px solid $home-bg;
+        border-left: 50px solid $home-bg;
         border-right: 15px solid $home-bg;
     }
   }
