@@ -44,6 +44,12 @@ If there is a page with a *slug* of "about" it will show up here. You can set th
 
 The code for this is in `loop-template/home-page.php`
 
+## Post Formats
+
+This theme supports post formats and will display some formats differently:
+
+- **Video** - Post's content area is widened to give embedded videos more room.
+
 ## Footer
 
 The footer is a widget area. Each widget is 1/3 wide, meaning that if you add three widgets they will flow out into three rows (assuming the screen is wide enough). The first will be the left most, 2nd middle, and third right. If you add more than three they will wrap and start all over again, probably wont look good. If you want to have just one widget on the right you'll need to make 2 blank "text" widgets to push it over.
