@@ -19,6 +19,7 @@
 .home {
   background-color: $home-bg;
   .post-hero {
+    background-image: url(../img/dem-hero-bg.jpg);
     background-color: $brand-primary;
     background-size: cover;
     color: $hero-text-color;

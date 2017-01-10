@@ -20,7 +20,7 @@ switch (get_post_format()) {
 }
 
 ?>
-<article <?php post_class('post-hero row'); ?> id="post-<?php the_ID(); ?>" style="background-image: url('<?php echo $thumb['0'];?>')">
+<article <?php post_class('post-hero row'); ?> id="post-<?php the_ID(); ?>">
 
 	<div class="overlay clearfix">
 		<div class="<?php echo $format_col ?>">

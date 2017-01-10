@@ -8588,6 +8588,7 @@ aside.widget {
 .home {
   background-color: #EBEBEB; }
   .home .post-hero {
+    background-image: url(../img/dem-hero-bg.jpg);
     background-color: #2B479C;
     background-size: cover;
     color: white;
