@@ -55,18 +55,6 @@ return <<<OUT
       <span class="sr-only">Tweet</span>
     </a>
   </li>
-  <li>
-    <a href="$google_href" target="_blank" title="Share on Google+">
-      $google_icon
-      <span class="sr-only">Share on Google+</span>
-    </a>
-  </li>
-  <li>
-    <a href="$mail_href" target="_blank" title="Send email">
-      $mail_icon
-      <span class="sr-only">Send email</span>
-    </a>
-  </li>
 </ul>
 OUT;
 }

@@ -16,8 +16,6 @@
 			
 				<div class="entry-meta">
 			
-					<?php echo understrap_social(); ?>
-
 					<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
 			
 				</div><!-- .entry-meta -->

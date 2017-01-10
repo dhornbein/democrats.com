@@ -43,7 +43,9 @@ switch (get_post_format()) {
 			
 			</div><!-- .entry-content -->
 			
-			<footer class="entry-footer">
+			<footer class="entry-footer text-xs-center">
+
+				<?php echo understrap_social(); ?>
 			
 				<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
 			
