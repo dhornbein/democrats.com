@@ -24,7 +24,7 @@
 		</div>
 	</div>
 
-	<div class="entry-content row">
+	<div class="entry-content">
 
 		<div class="col-md-8 offset-md-2">
 
@@ -43,7 +43,7 @@
 
 	<hr>
 
-	<footer class="entry-footer row">
+	<footer class="entry-footer">
 
 		<div class="col-md-8 offset-md-2 text-xs-center">
 			<h3>Share</h3>

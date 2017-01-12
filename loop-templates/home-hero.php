@@ -22,35 +22,33 @@ switch (get_post_format()) {
 ?>
 <article <?php post_class('post-hero row'); ?> id="post-<?php the_ID(); ?>">
 
-	<div class="overlay clearfix">
-		<div class="<?php echo $format_col ?>">
-			<header class="entry-header">
-			
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			
-			</header><!-- .entry-header -->
-			
-			<div class="entry-content">
-			
-				<?php the_content(); ?>
-			
-				<?php
-				wp_link_pages( array(
-					'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
-					'after'  => '</div>',
-				) );
-				?>
-			
-			</div><!-- .entry-content -->
-			
-			<footer class="entry-footer text-xs-center">
-
-				<?php echo understrap_social(); ?>
-			
-				<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
-			
-			</footer><!-- .entry-footer -->
-		</div>
+	<div class="<?php echo $format_col ?>">
+		<header class="entry-header">
+		
+			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		
+		</header><!-- .entry-header -->
+		
+		<div class="entry-content">
+		
+			<?php the_content(); ?>
+		
+			<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
+				'after'  => '</div>',
+			) );
+			?>
+		
+		</div><!-- .entry-content -->
+		
+		<footer class="entry-footer text-xs-center">
+	
+			<?php echo understrap_social(); ?>
+		
+			<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
+		
+		</footer><!-- .entry-footer -->
 	</div>
 
 </article><!-- #post-## -->
