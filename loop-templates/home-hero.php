@@ -31,7 +31,7 @@ switch (get_post_format()) {
 		
 		<div class="entry-content">
 		
-			<?php the_content(); ?>
+			<?php the_content('Read more...'); ?>
 		
 			<?php
 			wp_link_pages( array(

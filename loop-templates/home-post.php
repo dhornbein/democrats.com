@@ -10,14 +10,18 @@
 	<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 	
 		<header class="entry-header">
-	
-			<?php the_title( '<h5 class="entry-title">', '</h5>' ); ?>
+			
+			<a href="<?php the_permalink(); ?>">
+				<?php the_title( '<h5 class="entry-title">', '</h5>' ); ?>
+			</a>
 	
 		</header><!-- .entry-header -->
+
+		<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 	
 		<div class="entry-content">
 	
-			<?php the_content(); ?>
+			<?php the_content('Read more...'); ?>
 	
 			<?php
 			wp_link_pages( array(
