@@ -8608,14 +8608,26 @@ aside.widget {
   padding: 30px 0;
   margin-bottom: 30px; }
 
+.single .site-main .format-video .entry-feature-img {
+  display: none; }
+
+.single .site-main .format-video .entry-content iframe {
+  width: 100%; }
+
 .posts-featured {
   margin-bottom: 30px; }
   .posts-featured .post {
     background-color: white;
     padding: 15px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    height: 100%; }
     .posts-featured .post .entry-title {
       font-weight: bold; }
+    .posts-featured .post.format-video .entry-feature-img {
+      display: none; }
+    .posts-featured .post.format-video .entry-content iframe {
+      width: 100%;
+      height: auto; }
     .posts-featured .post img.aligncenter {
       width: 100%; }
 
@@ -8694,19 +8706,14 @@ ul.share-buttons {
     .posts-featured ul.share-buttons li {
       display: block; } }
 
-@media (min-width: 768px) {
-  .posts-featured {
-    display: table; }
-    .posts-featured .post {
-      margin-left: 0; }
-    .posts-featured > [class*="col-"] {
-      float: none;
-      display: table-cell;
-      vertical-align: top;
-      background-color: white;
-      padding: 0;
-      border-left: 50px solid #EBEBEB;
-      border-right: 15px solid #EBEBEB; } }
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .row-eq-height > [class*='col-'] {
+    display: flex;
+    flex-direction: column; }
 
 /*
 * Use existing Bootstrap 4 classes and

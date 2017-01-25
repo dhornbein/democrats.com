@@ -40,7 +40,7 @@ if (array_key_exists('thank_you',$_GET)) $thanks = true;
 
 		<div class="col-md-8 offset-md-2">
 
-			<div class="float-sm-left mr-1 mb-1">
+			<div class="entry-feature-img float-sm-left mr-1 mb-1">
 				<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 			</div>
 
