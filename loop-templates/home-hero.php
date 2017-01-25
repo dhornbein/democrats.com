@@ -30,6 +30,10 @@ switch (get_post_format()) {
 		</header><!-- .entry-header -->
 		
 		<div class="entry-content">
+
+			<div class="col-md-6 pl-0 text-xs-center">
+				<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+			</div>
 		
 			<?php the_content('Read more...'); ?>
 		
