@@ -8659,6 +8659,23 @@ ul.share-buttons {
     width: 1px;
     overflow: hidden; }
 
+.btn-social .fa {
+  margin-right: 15px; }
+
+.btn-facebook {
+  background-color: #3b5998;
+  color: white; }
+  .btn-facebook:hover {
+    background-color: #263961;
+    color: white; }
+
+.btn-twitter {
+  background-color: #55acee;
+  color: white; }
+  .btn-twitter:hover {
+    background-color: #1689e0;
+    color: white; }
+
 @media (max-width: 575px) {
   .hentry img.alignleft {
     display: block;

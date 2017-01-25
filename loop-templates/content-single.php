@@ -47,7 +47,7 @@
 
 		<div class="col-md-8 offset-md-2 text-xs-center">
 			<h3>Share</h3>
-			<?php echo understrap_social('3x'); ?>
+			<?php echo understrap_social('text'); ?>
 		</div>
 
 	</footer><!-- .entry-footer -->

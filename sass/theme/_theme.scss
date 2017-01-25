@@ -112,6 +112,28 @@ ul.share-buttons{
   }
 }
 
+.btn-social {
+  .fa {
+    margin-right: 15px;
+  }
+}
+.btn-facebook {
+  background-color: $brand-facebook-color;
+  color: white;
+  &:hover {
+    background-color: darken($brand-facebook-color,15%);
+    color:white;
+  }
+}
+.btn-twitter {
+  background-color: $brand-twitter-color;
+  color: white;
+  &:hover {
+    background-color: darken($brand-twitter-color,15%);
+    color:white;
+  }
+}
+
 
 @include media-breakpoint-down(xs) {
   .hentry {

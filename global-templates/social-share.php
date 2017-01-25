@@ -10,12 +10,20 @@
  */
 
 function understrap_social_icon($name, $size = 'lg'){
-return <<<ICO
+  if ($size == 'text') {
+$out = <<<ICO
+  <i class="fa fa-$name fa-inverse"></i>
+ICO;
+  } else {
+$out = <<<ICO
 <span class="icon-$name fa-stack fa-$size">
   <i class="fa fa-circle fa-stack-2x"></i>
   <i class="fa fa-$name fa-stack-1x fa-inverse"></i>
 </span>
 ICO;
+  }
+
+  return $out;
 }
 
 function understrap_social($icon_size = 'lg'){
@@ -47,7 +55,21 @@ $google_icon = understrap_social_icon('google', $icon_size);
 $mail_href = 'mailto:?subject=' . $title . '&body=Check this out:%0A%0A' . urlencode($url);
 $mail_icon = understrap_social_icon('envelope', $icon_size);
 
-return <<<OUT
+if ($icon_size == 'text'):
+$out = <<<OUT
+<a href="$facebook_href" target="_blank" title="Share on Facebook" class="btn btn-social btn-facebook btn-lg">
+  $facebook_icon
+  <span class="sr-only">Share on Facebook</span>
+  Facebook
+</a>
+<a href="$twitter_href" target="_blank" title="Tweet" class="btn btn-social btn-twitter btn-lg">
+  $twitter_icon
+  <span class="sr-only">Tweet</span>
+  Twitter
+</a>
+OUT;
+else:
+$out = <<<OUT
 <ul class="share-buttons">
   <li>
     <a href="$facebook_href" target="_blank" title="Share on Facebook" >
@@ -63,4 +85,7 @@ return <<<OUT
   </li>
 </ul>
 OUT;
+endif;
+
+return $out;
 }
