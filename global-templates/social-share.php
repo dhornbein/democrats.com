@@ -29,6 +29,12 @@ function understrap_social($icon_size = 'lg'){
   // If it's too long, cut off the title
   $twitter_text = $tweet_diff < 0 ? substr($title, 0, $tweet_diff - 4) . '... ' . $url : $title . ': ' . $url;
 
+  $tweet_custom = get_post_meta(get_the_ID(), 'tweet', true);
+
+  if ($tweet_custom) {
+    $twitter_text = urlencode($tweet_custom) . ' ' . $url;
+  }
+
 $facebook_href = 'https://www.facebook.com/sharer/sharer.php?u=' . urlencode($url) . '&t=';
 $facebook_icon = understrap_social_icon('facebook', $icon_size);
 
