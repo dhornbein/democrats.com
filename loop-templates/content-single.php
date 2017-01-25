@@ -5,12 +5,24 @@
  * @package understrap
  */
 
+if (array_key_exists('thank_you',$_GET)) $thanks = true;
+
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<div class="row">
 		<div class="col-xs-12">
 			<header class="entry-header text-xs-center">
+				<?php if ($thanks): ?>
+
+				<div class="text-xs-center">
+					<h2><strong>Thank you for your support!</strong></h2>
+					<h3>Spread the word:</h3>
+					<?php echo understrap_social('text'); ?>
+				</div>
+				<br>
+
+				<?php endif; ?>
 			
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			
