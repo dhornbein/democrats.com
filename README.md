@@ -12,7 +12,7 @@
 
 ## Outline
 
-This is currently a single page theme.
+The theme has a front page and single post pages.
 
 The home page consists of three main sections:
 
@@ -49,6 +49,10 @@ The code for this is in `loop-template/home-page.php`
 This theme supports post formats and will display some formats differently:
 
 - **Video** - Post's content area is widened to give embedded videos more room.
+
+## Custom tweet message
+
+Any post can change the default share tweet text that appears after the user clicks share via twitter. Adding a custom field a post with the name 'tweet' and the custom message. Note: you'll have to make sure it's less than ~100 characters to account for the link and "via @demoratscom"
 
 ## Footer
 
