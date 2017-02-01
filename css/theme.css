@@ -8706,14 +8706,15 @@ ul.share-buttons {
     .posts-featured ul.share-buttons li {
       display: block; } }
 
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  .row-eq-height > [class*='col-'] {
-    display: flex;
-    flex-direction: column; }
+@media (min-width: 576px) {
+  .row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .row-eq-height > [class*='col-'] {
+      display: flex;
+      flex-direction: column; } }
 
 /*
 * Use existing Bootstrap 4 classes and

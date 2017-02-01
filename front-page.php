@@ -31,7 +31,7 @@ $about_slug = 'about';
 							$first = false; 
 						?>
 
-						<div class="posts-featured row-eq-height">
+						<div class="posts-featured row row-eq-height">
 
 						<?php else: ?>
 
