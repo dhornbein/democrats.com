@@ -23,15 +23,15 @@ if (array_key_exists('thank_you',$_GET)) $thanks = true;
 				<br>
 
 				<?php endif; ?>
-			
+
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-			
+
 				<div class="entry-meta">
-			
+
 					<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
-			
+
 				</div><!-- .entry-meta -->
-			
+
 			</header><!-- .entry-header -->
 		</div>
 	</div>
@@ -39,13 +39,14 @@ if (array_key_exists('thank_you',$_GET)) $thanks = true;
 	<div class="entry-content row">
 
 		<div class="col-md-8 offset-md-2">
-
+			<?php if ( has_post_thumbnail( $post->ID ) ): ?>
 			<div class="entry-feature-img float-sm-left mr-1 mb-1">
 				<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 			</div>
+			<?php endif; ?>
 
 			<?php the_content(); ?>
-			
+
 			<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
